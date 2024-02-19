@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Important: Set the X-UA-Compatible meta tag for IE compatibility -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Start of head -->
+  <head>
+    <!-- Start of head -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Optex task</title>
+    <!-- Set viewport for responsiveness -->
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+    <!-- Set favicon -->
+    <link rel="icon" href="assets/aiim.png" type="image/x-icon">
+
+    <!-- Include Open Sans font -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" media="all">
+
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- Load Bootstrap CSS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Include jQuery Slim -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <!-- Include Popper.js for Bootstrap dropdowns -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+
+
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="htt//ps://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" /> -->
+
+  </head>
+  <!-- End of head -->
+</head>
+<!-- End of head -->
+
+
+<body>
+
+  <div class="wrapper">
+    <!--
+			Tip 1: You can change the background color of the main header using: data-background-color="blue | purple | light-blue | green | orange | red"
+		-->
+    <div class="main-header">
+      <!-- Logo Header -->
+      <div class="logo-header">
+
+        <a href="index.html" class="logo">
+          <img src="assets/aiim.png" alt="navbar brand" class="logo">
+
+        </a>
+        <a href="index.html" style="color: rgb(70, 83, 94);font-weight: bold;">&nbsp; App Name</a>
+        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+          data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+        <button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+        <div class="navbar-minimize">
+          <button class="btn btn-minimize btn-rounded">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!-- End Logo Header -->
+
+      <nav class="navbar navbar-header navbar-expand-lg">
+
+        <div class="container-fluid">
+          <div class="collapse" id="search-nav">
+            <form class="navbar-left navbar-form nav-search mr-md-3">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <button type="submit" class="btn btn-search pr-1">
+                    <i class="fa fa-search search-icon"></i>
+                  </button>
+
+                </div>
+                <input type="text" placeholder="Search Task" class="form-control">
+                <!-- <i class="fa fa-arrow-right" style="padding-right: 10; padding-top: 10;"></i> -->
+                <button style=" border: 0px">
+                  <i class="fa fa-microphone"></i>
+                </button>
+
+
+              </div>
+
+            </form>
+          </div>
+          <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+             
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Tasks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reporting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Goals</a>
+            </li>
+
+          </ul>
+          <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+            <li class="nav-item toggle-nav-search hidden-caret">
+              <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false"
+                aria-controls="search-nav">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-hand-o-left" aria-hidden="true"></i>">
+              </a>
+            </li>
+
+
+            <li class="nav-item dropdown hidden-caret">
+              <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                <li>
+                  <div class="dropdown-title d-flex justify-content-between align-items-center">
+                    Messages
+                    <a href="#" class="small">Mark all as read</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="message-notif-scroll scrollbar-outer">
+                    <div class="notif-center">
+                      <a href="#">
+                        <div class="notif-img">
+                          <img src="assets/aiim.png" alt="Img Profile">
+                        </div>
+                        <div class="notif-content">
+                          <span class="subject">AD</span>
+                          <span class="block">
+                            How are you ?
+                          </span>
+                          <span class="time">5 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-img">
+                          <img src="assets/aiim.png" alt="Img Profile">
+                        </div>
+                        <div class="notif-content">
+                          <span class="subject">Jhon</span>
+                          <span class="block">
+                            Ok, Thanks !
+                          </span>
+                          <span class="time">12 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-img">
+                          <img src="assets/aiim.png" alt="Img Profile">
+                        </div>
+                        <div class="notif-content">
+                          <span class="subject">SK</span>
+                          <span class="block">
+                            Ready for the meeting today...
+                          </span>
+                          <span class="time">12 minutes ago</span>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i> </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown hidden-caret">
+              <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bell"></i>
+                <span class="notification">4</span>
+              </a>
+              <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                <li>
+                  <div class="dropdown-title">You have 4 new notification</div>
+                </li>
+                <li>
+                  <div class="notif-scroll scrollbar-outer">
+                    <div class="notif-center">
+                      <a href="#">
+                        <div class="notif-icon notif-primary"> <i class="fa fa-user-plus"></i> </div>
+                        <div class="notif-content">
+                          <span class="block">
+                            New user registered
+                          </span>
+                          <span class="time">5 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-icon notif-success"> <i class="fa fa-comment"></i> </div>
+                        <div class="notif-content">
+                          <span class="block">
+                            Rahmad commented on Admin
+                          </span>
+                          <span class="time">12 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-icon notif-success"> <i class="fa fa-comment"></i> </div>
+                        <div class="notif-content">
+                          <span class="block">
+                            Reza send messages to you
+                          </span>
+                          <span class="time">12 minutes ago</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="notif-icon notif-danger"> <i class="fa fa-heart"></i> </div>
+                        <div class="notif-content">
+                          <span class="block">
+                            Farrah liked Admin
+                          </span>
+                          <span class="time">17 minutes ago</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="see-all" href="javascript:void(0);">See all notifications<i class="fa fa-angle-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown hidden-caret">
+              <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+                <div class="avatar-sm">
+                  <img src="assets/Ankush1.png" alt="..." class="avatar-img rounded-circle">
+                </div>
+              </a>
+              <ul class="dropdown-menu dropdown-user animated fadeIn">
+                <li>
+                  <div class="user-box">
+                    <div class="avatar-lg"><img src="assets/Ankush1.png" alt="image profile" class="avatar-img rounded">
+                    </div>
+                    <div class="u-text">
+                      <h4>Ankush</h4>
+                      <p class="text-muted">hello@example.com</p><a href="profile.html"
+                        class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">My Profile</a>
+                  <a class="dropdown-item" href="#">My Balance</a>
+                  <a class="dropdown-item" href="#">Inbox</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Account Setting</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <div class="sidebar-background"></div>
+      <div class="sidebar-wrapper scrollbar-inner">
+        <div class="sidebar-content">
+          <div class="user">
+            <div class="avatar-sm float-left mr-2">
+              <img src="assets/Ankush1.png" alt="..." class="avatar-img rounded-circle">
+            </div>
+            <div class="info">
+              <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                <span>
+                  Ankush
+                  <span class="user-level">Administrator</span>
+                  <span class="caret"></span>
+                </span>
+              </a>
+              <div class="clearfix"></div>
+
+              <div class="collapse in" id="collapseExample">
+                <ul class="nav">
+                  <li>
+                    <a href="#profile">
+                      <span class="link-collapse">My Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#edit">
+                      <span class="link-collapse">Edit Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#settings">
+                      <span class="link-collapse">Settings</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <ul class="nav">
+            <li class="nav-item active">
+              <a href="index.html">
+                <i class="fas fa-inbox"></i>
+                <p>Dashboard</p>
+                <span class="badge badge-count badge-info">4</span>
+              </a>
+            </li>
+            <!-- <li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							 <h4 class="text-section">Components</h4> 
+						</li> -->
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#drivefile">
+                <!-- <i class="fas fa-folder-plus"></i> -->
+                <i class="fas fa-folder-open"></i>
+                <p>Drive Files</p>
+                <!-- <span class="caret"></span> -->
+                <span class="badge badge-count badge-info">4</span>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#boards">
+                <i class="fas fa-table"></i>
+                <p>Boards</p>
+
+                <span class="badge badge-count badge-info ">5</span>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#updates">
+                <i class="fas fa-stopwatch"></i>
+                <p>Updates</p>
+                <span class="badge badge-count badge-info"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#analytics">
+                <i class="fas fa-chart-pie"></i>
+                <p>Analystics</p>
+                <span class="badge badge-count badge-info">2</span>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#charts">
+                <i class="far fa-chart-bar"></i>
+                <p>CRM Dashboard </p>
+                <span class="badge badge-count badge-info">2</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="widgets.html">
+                <i class="fas fa-tag"></i>
+                <p>Ecommerce</p>
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#custompages">
+                <i class="fas fa-coins"></i>
+                <p>Cryptocurryency</p>
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#submenu">
+                <i class="fas fa-lock"></i>
+                <p>Projects</p>
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#custompages">
+                <i class="fas fa-money-bill-wave"></i>
+                <p>NFT Marketplace</p>
+
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a data-toggle="collapse" href="#custompages">
+                <i class="fas fa-sliders-h"></i>
+                <p>Setting</p>
+                <span class="badge badge-count badge-info">2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Sidebar -->
+
+<!-- main pannel  -->
+    <div class="main-panel">
+      <div class="content">
+        <div class="page-inner">
+          <div class="page-header">
+
+
+            <!-- second nav bar  -->
+
+            <nav class="navbar navbar-header navbar-expand-lg">
+              <div class="container-fluid">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <!-- <ul class="nav justify-content-center"> -->
+
+                  <h4 style="font-weight:bold;">Task Board</h4>
+                  <!-- <span class="badge badge-count badge-info ">5</span> -->
+
+
+                  <!-- </ul> -->
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+
+
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li> -->
+
+
+
+
+
+
+
+                    <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Timeline</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Calender</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Progress</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Form</a>
+                      </li>
+                    </ul>
+
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"></a>
+                    </li>
+
+
+
+                  </ul>
+
+
+
+                </div>
+            </nav>
+            <ul class="nav justify-content-end">
+              <div class="user-lists">
+                <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                <div class="users">+11</div>
+            </ul>
+
+
+
+          </div>
+
+          <!-- third nav bar  -->
+
+          <nav class="navbar navbar-header navbar-expand-lg">
+
+         
+            <!-- Container wrapper -->
+            <div class="container-fluid justify-content-center justify-content-md-between">
+              <!-- Left elements -->
+              <div>
+             
+                  <button class="btn btn-outline me-1"  type="button">
+                    <i class="fas fa-table-cells-large"></i>&nbsp; Board View
+                  </button>
+
+                  <button class="btn btn-outline me-1" type="button">
+                    <i class="fas fa-bars"></i>&nbsp; List View
+                  </button>
+
+         
+              
+        
+                <button class="btn btn-outline me-1" type="button" disabled>
+                  <i class="fas fa-lock"></i>&nbsp; Limited Access
+                </button>
+        
+           
+              </div>
+              <!-- Left elements -->
+
+    
+         <!-- Search box  -->
+                <div class="collapse" id="search-nav">
+                  <form class="navbar-left navbar-form nav-search mr-md-3">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button type="submit" class="btn btn-search pr-1">
+                          <i class="fa fa-search search-icon"></i>
+                        </button>
+      
+                      </div>
+                      <input type="text" placeholder="Search Task" class="form-control">
+                      <!-- <i class="fa fa-arrow-right" style="padding-right: 10; padding-top: 10;"></i> -->
+                      <button style=" border: 0px">
+                        <i class="fa fa-microphone"></i>
+                      </button>
+      
+      
+                    </div>
+      
+                  </form>
+                </div>
+        
+              <!-- Right elements -->
+              
+              <div>
+
+                <button class="btn btn-outline me-1 px-2" type="button">
+                  <i class="fas fa-file-text me-2"></i>
+                </button>
+        
+                <button class="btn btn-outline me-1"  type="button">
+                  <i class="fas fa-align-left me-2"></i>
+                </button>
+        
+                <button class="btn btn-outline me-1"  type="button">
+                  <i class="fas fa-align-center me-2"></i>
+                </button>
+                <button class="btn btn-outline" type="button">
+                  <i class="fas fa-circle-dot me-2"></i>
+                </button>
+                <button class="btn btn-outline"  type="button">
+                  <i class="fas fa-grip me-2"></i>
+                </button>
+              </div>
+              <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+          </nav>
+          
+<br/>
+
+          <!-- Main Page for grid view of content  -->
+
+          <div class="row">
+
+            <!-- first grid -->
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                        Page "Order" and "Setting" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      </h6>
+                     
+                      
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">4</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">8/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="8"
+                          aria-setsize="0" aria-valuemax="10" >
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+                    <div class="designs">
+                      Designs
+                    </div>
+                    <br />
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                        <div class="users">+5</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="col-4 col-md-2">
+
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">3</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Grid -->
+
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                        create calender, chat and email app pages
+                      </h6>
+                    
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">1</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">5/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="5"
+                          aria-valuemin="0" aria-valuemax="10">
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+                    <div class="developemnt">
+                      Developement
+                    </div>
+                    <br />
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                        <div class="users">+5</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="col-4 col-md-2">
+
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">4</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- third grid  -->
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                        Product Design, Figma, Sketch(Software), Prototype
+                      </h6>
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">2</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">3/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="3"
+                          aria-valuemin="0" aria-valuemax="10">
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+                 
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <!-- <div class="users"><img src="assets/aiim.png" alt="User 3"></div> -->
+                        <!-- <div class="users"></div> -->
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="col-4 col-md-2">
+
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">4</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Fourth Grid  -->
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                       Change email option process &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </h6>
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">2</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">4/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="4"
+                          aria-valuemin="0" aria-valuemax="10">
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                        <div class="users">+5</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">4</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+                        <!-- fifth grid -->
+                        <div class="col-sm-8 col-md-3">
+
+                          <div class="card card-stats card-round">
+                            <div class="card-body ">
+            
+            
+            
+                              <div class="row">
+                                <div class="col">
+                                  <h6>
+                                    Page "Order" and "Setting" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                                  </h6>
+                                 
+                                  
+                                </div>
+                                <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                                  <i class="fa fa-file-text"></i>
+                                  <span class="notification">4</span>
+                                </div>
+                              </div>
+            
+            
+                              <section id="skills" class="skills section-bg">
+                                <div class="container" data-aos="fade-up">
+            
+                                  <div class="progress mt-3">
+                                    <span class="skill">Progress <i class="val">8/10</i></span>
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="8"
+                                      aria-setsize="0" aria-valuemax="10" >
+                                    </div>
+                                  </div>
+            
+                                </div>
+                              </section>
+            
+                              <div class="row" style="margin: auto;">
+                                <div class="designs">
+                                  Designs
+                                </div>
+                                <br />
+            
+                                <div class="backlog">
+                                  Backlog
+                                </div>
+                              </div>
+                              <br/>
+            
+                              <div class="row">
+                                <div class="col-8 col-sm-4 col-md-6">
+                                  <div class="user-lists">
+                                    <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                                    <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                                    <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                                    <div class="users">+5</div>
+                                  </div>
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-envelope"></i>
+                                      <span class="notification">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                                      <li>
+                                        <div class="dropdown-title d-flex justify-content-between align-items-center">
+                                          Messages
+                                          <a href="#" class="small">Mark all as read</a>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all messages<i
+                                            class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+            
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+            
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-bell"></i>
+                                      <span class="notification">3</span>
+                                    </a>
+                                    <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                                      <li>
+                                        <div class="dropdown-title">You have new notification</div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                            class="fa fa-angle-right"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+            
+                                </div>
+            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- sixth Grid -->
+            
+                        <div class="col-sm-8 col-md-3">
+            
+                          <div class="card card-stats card-round">
+                            <div class="card-body ">
+            
+            
+            
+                              <div class="row">
+                                <div class="col">
+                                  <h6>
+                                    create calender, chat and email app pages
+                                  </h6>
+                                
+                                </div>
+                                <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                                  <i class="fa fa-file-text"></i>
+                                  <span class="notification">1</span>
+                                </div>
+                              </div>
+            
+            
+                              <section id="skills" class="skills section-bg">
+                                <div class="container" data-aos="fade-up">
+            
+                                  <div class="progress mt-3">
+                                    <span class="skill">Progress <i class="val">5/10</i></span>
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="5"
+                                      aria-valuemin="0" aria-valuemax="10">
+                                    </div>
+                                  </div>
+            
+                                </div>
+                              </section>
+            
+                              <div class="row" style="margin: auto;">
+                                <div class="developemnt">
+                                  Developement
+                                </div>
+                                <br />
+            
+                                <div class="backlog">
+                                  Backlog
+                                </div>
+                              </div>
+                              <br/>
+            
+                              <div class="row">
+                                <div class="col-8 col-sm-4 col-md-6">
+                                  <div class="user-lists">
+                                    <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                                    <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                                    <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                                    <div class="users">+5</div>
+                                  </div>
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-envelope"></i>
+                                      <span class="notification">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                                      <li>
+                                        <div class="dropdown-title d-flex justify-content-between align-items-center">
+                                          Messages
+                                          <a href="#" class="small">Mark all as read</a>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all messages<i
+                                            class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+            
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+            
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-bell"></i>
+                                      <span class="notification">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                                      <li>
+                                        <div class="dropdown-title">You have new notification</div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                            class="fa fa-angle-right"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+            
+                                </div>
+            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <!-- seventh grid  -->
+                        <div class="col-sm-8 col-md-3">
+            
+                          <div class="card card-stats card-round">
+                            <div class="card-body ">
+            
+            
+            
+                              <div class="row">
+                                <div class="col">
+                                  <h6>
+                                    Product Design, Figma, Sketch(Software), Prototype
+                                  </h6>
+                                </div>
+                                <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                                  <i class="fa fa-file-text"></i>
+                                  <span class="notification">2</span>
+                                </div>
+                              </div>
+            
+            
+                              <section id="skills" class="skills section-bg">
+                                <div class="container" data-aos="fade-up">
+            
+                                  <div class="progress mt-3">
+                                    <span class="skill">Progress <i class="val">3/10</i></span>
+                                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="3"
+                                      aria-valuemin="0" aria-valuemax="10">
+                                    </div>
+                                  </div>
+            
+                                </div>
+                              </section>
+            
+                              <div class="row" style="margin: auto;">
+                             
+            
+                                <div class="backlog">
+                                  Backlog
+                                </div>
+                              </div>
+                              <br/>
+            
+                              <div class="row">
+                                <div class="col-8 col-sm-4 col-md-6">
+                                  <div class="user-lists">
+                                    <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                                    <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                                    <!-- <div class="users"><img src="assets/aiim.png" alt="User 3"></div> -->
+                                    <!-- <div class="users"></div> -->
+                                  </div>
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-envelope"></i>
+                                      <span class="notification">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                                      <li>
+                                        <div class="dropdown-title d-flex justify-content-between align-items-center">
+                                          Messages
+                                          <a href="#" class="small">Mark all as read</a>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all messages<i
+                                            class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+            
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+            
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-bell"></i>
+                                      <span class="notification">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                                      <li>
+                                        <div class="dropdown-title">You have new notification</div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                            class="fa fa-angle-right"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+            
+                                </div>
+            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            
+            
+                        <!-- eight Grid  -->
+                        <div class="col-sm-8 col-md-3">
+            
+                          <div class="card card-stats card-round">
+                            <div class="card-body ">
+            
+            
+            
+                              <div class="row">
+                                <div class="col">
+                                  <h6>
+                                   Change email option process  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  </h6>
+                                </div>
+                                <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                                  <i class="fa fa-file-text"></i>
+                                  <span class="notification">2</span>
+                                </div>
+                              </div>
+            
+            
+                              <section id="skills" class="skills section-bg">
+                                <div class="container" data-aos="fade-up">
+            
+                                  <div class="progress mt-3">
+                                    <span class="skill">Progress <i class="val">4/10</i></span>
+                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="4"
+                                      aria-valuemin="0" aria-valuemax="10">
+                                    </div>
+                                  </div>
+            
+                                </div>
+                              </section>
+            
+                              <div class="row" style="margin: auto;">
+            
+                                <div class="backlog">
+                                  Backlog
+                                </div>
+                              </div>
+                              <br/>
+            
+                              <div class="row">
+                                <div class="col-8 col-sm-4 col-md-6">
+                                  <div class="user-lists">
+                                    <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                                    <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                                    <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                                    <div class="users">+5</div>
+                                  </div>
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-envelope"></i>
+                                      <span class="notification">2</span>
+                                    </a>
+                                    <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                                      <li>
+                                        <div class="dropdown-title d-flex justify-content-between align-items-center">
+                                          Messages
+                                          <a href="#" class="small">Mark all as read</a>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all messages<i
+                                            class="fa fa-angle-right"></i> </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+            
+                                <div class="col-4 col-md-2">
+                                  <div class="nav-item dropdown hidden-caret">
+                                    <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="fa fa-bell"></i>
+                                      <span class="notification">4</span>
+                                    </a>
+                                    <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                                      <li>
+                                        <div class="dropdown-title">You have new notification</div>
+                                      </li>
+                                      <li>
+                                        <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                            class="fa fa-angle-right"></i>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+            
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                                    <!-- nighth grid -->
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                        Page "Order" and "Setting" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                      </h6>
+                     
+                      
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">4</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">8/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="8"
+                          aria-setsize="0" aria-valuemax="10" >
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+                    <div class="designs">
+                      Designs
+                    </div>
+                    <br />
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                        <div class="users">+5</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="col-4 col-md-2">
+
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">3</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- tenth Grid -->
+
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                        create calender, chat and email app pages &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </h6>
+                    
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">1</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">5/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="5"
+                          aria-valuemin="0" aria-valuemax="10">
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+                    <div class="developemnt">
+                      Developement
+                    </div>
+                    <br />
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                        <div class="users">+5</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="col-4 col-md-2">
+
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">4</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- eleventh grid  -->
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                        Product Design, Figma, Sketch(Software), Prototype
+                      </h6>
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">2</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">3/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="3"
+                          aria-valuemin="0" aria-valuemax="10">
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+                 
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <!-- <div class="users"><img src="assets/aiim.png" alt="User 3"></div> -->
+                        <!-- <div class="users"></div> -->
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <div class="col-4 col-md-2">
+
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">4</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- twleth Grid  -->
+            <div class="col-sm-8 col-md-3">
+
+              <div class="card card-stats card-round">
+                <div class="card-body ">
+
+
+
+                  <div class="row">
+                    <div class="col">
+                      <h6>
+                       Change email option process &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </h6>
+                    </div>
+                    <div class="col col-lg-3" style="color: rgb(16, 208, 205);">
+                      <i class="fa fa-file-text"></i>
+                      <span class="notification">2</span>
+                    </div>
+                  </div>
+
+
+                  <section id="skills" class="skills section-bg">
+                    <div class="container" data-aos="fade-up">
+
+                      <div class="progress mt-3">
+                        <span class="skill">Progress <i class="val">4/10</i></span>
+                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="4"
+                          aria-valuemin="0" aria-valuemax="10">
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+
+                  <div class="row" style="margin: auto;">
+
+                    <div class="backlog">
+                      Backlog
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row">
+                    <div class="col-8 col-sm-4 col-md-6">
+                      <div class="user-lists">
+                        <div class="users"><img src="assets/aiim.png" alt="User 1"></div>
+                        <div class="users"><img src="assets/Ankush.jpeg" alt="User 2"></div>
+                        <div class="users"><img src="assets/aiim.png" alt="User 3"></div>
+                        <div class="users">+5</div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="messageDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-envelope"></i>
+                          <span class="notification">2</span>
+                        </a>
+                        <ul class="dropdown-menu messages-notif-box animated fadeIn" aria-labelledby="messageDropdown">
+                          <li>
+                            <div class="dropdown-title d-flex justify-content-between align-items-center">
+                              Messages
+                              <a href="#" class="small">Mark all as read</a>
+                            </div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all messages<i
+                                class="fa fa-angle-right"></i> </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-md-2">
+                      <div class="nav-item dropdown hidden-caret">
+                        <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-bell"></i>
+                          <span class="notification">4</span>
+                        </a>
+                        <ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="notifDropdown">
+                          <li>
+                            <div class="dropdown-title">You have new notification</div>
+                          </li>
+                          <li>
+                            <a class="see-all" href="javascript:void(0);">See all notifications<i
+                                class="fa fa-angle-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>
